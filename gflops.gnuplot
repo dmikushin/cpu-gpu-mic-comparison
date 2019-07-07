@@ -118,7 +118,7 @@ set label "Tesla M2090"  at 2011,2200 center rotate by 40 textcolor rgb "#00680c
 set label "Tesla K20"    at 2012,2800 center rotate by 40 textcolor rgb "#00680c"
 set label "Tesla K20X"   at 2013,3600 center rotate by 40 textcolor rgb "#00680c"
 set label "Tesla K40"    at 2014,4800 center rotate by 40 textcolor rgb "#00680c"
-set label "Tesla K40"    at 2015,5000 center rotate by 40 textcolor rgb "#00680c"
+set label "Tesla K80"    at 2015,5000 center rotate by 40 textcolor rgb "#00680c"
 set label "Tesla P100"   at 2016,6900 center rotate by 40 textcolor rgb "#00680c"
 set label "Tesla V100"   at 2017,9000 center rotate by 40 textcolor rgb "#00680c"
 
