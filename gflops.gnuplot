@@ -50,7 +50,7 @@ plot 'data-intel.txt'     using 1:2 with linesp pt 9 ps 3.0 title "INTEL Xeon CP
 
 set yrange [30:14000]
 set output "gflops-dp.eps"
-set title "Theoretical Peak Performance, Double Precision"
+#set title "Theoretical Peak Performance, Double Precision"
 
 
 unset label
