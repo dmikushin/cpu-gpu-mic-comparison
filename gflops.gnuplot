@@ -45,11 +45,12 @@ set label "Titan RTX"      at 2018,22000 center rotate by 40 textcolor rgb "#006
 
 plot 'data-intel.txt'     using 1:2 with linesp pt 9 ps 3.0 title "INTEL Xeon CPUs", \
      'data-sp-nvidia.txt' using 1:2 with linesp pt 5 ps 3.0 title "NVIDIA GeForce GPUs", \
-     'data-amd.txt'       using 1:2 with linesp pt 7 ps 3.0 title "AMD Radeon GPUs"
+     'data-amd.txt'       using 1:2 with linesp pt 7 ps 3.0 title "AMD Radeon GPUs", \
+     'data-amd-cpus.txt' using 1:2 with linesp pt 11 ps 3.0 title "AMD Epyc CPUs"
 
 set yrange [30:14000]
 set output "gflops-dp.eps"
-#set title "Theoretical Peak Performance, Double Precision"
+set title "Theoretical Peak Performance, Double Precision"
 
 
 unset label
@@ -58,6 +59,9 @@ unset label
 set label "FirePro W9100"   at 2014,4200 center rotate by 40 textcolor rgb "#971c00"
 set label "Instinct MI60"   at 2018,9000 center rotate by 40 textcolor rgb "#971c00"
 set label "Instinct MI100"  at 2020,13100 center rotate by 40 textcolor rgb "#971c00"
+
+# Labels AMD CPUs
+set label "Epyc 7742" at 2019,4400 center rotate by 48
 
 # Labels Intel
 set label "E5-2699 v3"    at 2014,3400 center rotate by 40 textcolor rgb "#005197"
@@ -73,4 +77,5 @@ set label "Tesla A100"   at 2020,12300 center rotate by 40 textcolor rgb "#00680
 
 plot 'data-intel.txt'     using 1:3 with linesp pt  9 ps 3.0 title "INTEL Xeon CPUs", \
      'data-dp-nvidia.txt' using 1:2 with linesp pt  5 ps 3.0 title "NVIDIA Tesla GPUs", \
-     'data-amd.txt'       using 1:3 with linesp pt  7 ps 3.0 title "AMD Radeon GPUs"
+     'data-amd.txt'       using 1:3 with linesp pt  7 ps 3.0 title "AMD Radeon GPUs", \
+     'data-amd-cpus.txt' using 1:3 with linesp pt 11 ps 3.0 title "AMD Epyc CPUs"
