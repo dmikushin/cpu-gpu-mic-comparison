@@ -14,7 +14,7 @@ set border linewidth 1.5
 
 #set logscale y
 #set format y "10^{%L}"
-set xrange [2006.4:2018.6]
+set xrange [2006.4:2021]
 set key samplen 6 spacing 3.0
 set key left top
 set grid lw 3
@@ -76,7 +76,7 @@ plot 'data-intel.txt'     using 1:2 with linesp pt 9 ps 3.0 title "INTEL Xeon CP
      'data-amd.txt'       using 1:2 with linesp pt 7 ps 3.0 title "AMD Radeon GPUs", \
      'data-intel-phi.txt' using 1:2 with linesp pt 11 ps 3.0 title "INTEL Xeon Phis"
 
-set yrange [30:10000]
+set yrange [30:12000]
 set output "gflops-dp.eps"
 #set title "Theoretical Peak Performance, Double Precision"
 
@@ -121,6 +121,7 @@ set label "Tesla K40"    at 2014,4800 center rotate by 40 textcolor rgb "#00680c
 set label "Tesla K80"    at 2015,5000 center rotate by 40 textcolor rgb "#00680c"
 set label "Tesla P100"   at 2016,6900 center rotate by 40 textcolor rgb "#00680c"
 set label "Tesla V100"   at 2017,9000 center rotate by 40 textcolor rgb "#00680c"
+set label "Tesla A100"   at 2020,11000 center rotate by 40 textcolor rgb "#00680c"
 
 # Labels Xeon Phi
 set label "KNC 7120" at 2013,3000 center rotate by 40
